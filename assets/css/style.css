@@ -1,0 +1,263 @@
+body {
+  max-width: 1440px;
+  box-sizing: border-box;
+  background-color: #F9F9F9;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background: #FFFFFF;
+  padding: 0px 24px;
+
+  display: flex;
+  align-items: center;
+  height: 56px;
+  gap: 32px;
+  zoom: 0.5;
+}
+.start {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 33%;
+}
+.start-button,
+.end button {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 6px 9px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.start-button:hover,
+.end button:hover {
+  background: #0000001a;
+}
+.start-logo {
+  width: 90px;
+  height: 20px;
+}
+form {
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+form input {
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  height: 40px;
+  flex: 1;
+}
+form .search-button {
+  background: #F8F8F8;
+  border: 1px solid #CCCCCC;
+  width: 57px;
+  height: 40px;
+  cursor: pointer;
+}
+form .search-button:hover {
+  background: #0000001a;
+}
+.end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33%;
+}
+ main {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.watching-video {
+  width: 100%;
+  max-width: 952px;
+  padding-bottom: 20px;
+}
+.video {
+  width: 100%;
+  max-width: 952px;
+  max-height: 537px;
+}
+.video-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 10px 0;
+}
+.video-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.channel-wrapper {
+  display: flex;
+  gap: 42px;
+}
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 42px;
+}
+.video-details {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 5px;
+}
+.video-details p,
+.video-details span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+.video-details p { color: #000000; }
+.video-details span { color:#515151; }
+.video-button.subscribe {
+  background: #CC0000;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  justify-content: center;
+  height: 40px;
+  width: max-content;
+}
+.video-button.subscribe:hover {
+  background: #cc0000d0;
+  color: #FFFFFF;
+}
+.video-feedback-button {
+  display: flex;
+  width: max-content;
+}
+.feedback-button {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  height: 24px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  padding: 20px 10px;
+}
+.menu-feedback {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.feedback-button:hover {
+  background: #0000001a;
+}
+.video-datetime-transmission {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 1rem 0px;
+}
+.video-description {
+  color: #515151;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  width: 60%;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 372px;
+}
+.card {
+  display: flex;
+  gap: 16px;
+}
+.card img {
+  width: 160px;
+  height: 90px;
+}
+.card-info h3 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+.card-info p {
+  margin: 8px 0 7px 0;
+}
+.card-info p,
+.card-info span {
+  display: inline-block;
+  color: #515151;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  max-width: 120px;
+}
+@media screen and (min-width: 425px) {
+    header { zoom: .6; }
+    .video { min-height: 250px; }
+}
+
+@media screen and (min-width: 610px) {
+  .video { min-height: 320px;  }
+  .video-actions { gap: 42px; }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    zoom: 1;
+  }
+  main {
+    flex-direction: row;
+    gap: 25px;
+    padding: 28px 16px 50px 25px;
+  }
+  .watching-video {
+    width: 75%;
+    max-width: 952px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 28px 16px 50px 75px;
+  }
+  .video {
+    min-height: 45%;
+  }
+  .video-feedback-button {
+    justify-content: flex-start;
+    gap: 42px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .feedback-button {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .menu-feedback {
+    display: none;
+  }
+}
