@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Você colocará a mão na massa e irá clonar a página do YouTube com CSS colocando em prática todos os conceitos aprendidos, principalmente sobre Flexbox.
+Clonar a página do YouTube com CSS colocando em prática todos os conceitos aprendidos, principalmente sobre Flexbox.
 
 ## Link do figma:
 
